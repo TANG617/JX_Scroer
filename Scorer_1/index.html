@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>年级大会计分板</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./source/bs.min.css">
+  <script src="./source/jquery.min.js"></script>
+  <script src="./source/popper.min.js"></script>
+  <script src="./source/bs.min.js"></script>
+  <script src="./source/vue.js"></script>
+</head>
+<script type="text/javascript">
+	function change_up(id){
+		$("#val-"+String(id)).text(String(Number($("#val-"+String(id)).text())+5));
+	}
+	function change_down(id) {
+		$("#val-"+String(id)).text(String(Number($("#val-"+String(id)).text())-5));
+	}
+	function myFunction() {
+	  alert('时间到');
+	}
+</script>
+<style>
+	.clss{
+		margin: 4em;
+		width: 10em;
+		box-shadow: darkgrey 5px 5px 15px 2px ;
+	}
+	.num{
+		font-family: fantasy;
+		font-size: 3em;
+		float: right;
+		color: darkgray;
+	}
+</style>
+
+<body background="pics/bkgd_3.png" style=" background-repeat:no-repeat ;background-size:100% 100%; background-attachment: fixed;" >
+<div class="container">
+	<br/>
+	<div class="card-columns">
+		<div class="card clss">
+			<div class="card-body">
+			      <h3 class="card-title">1班</h3>
+			      <p class="card-text"><span class="num" id="val-1">0</span></p>
+			      <button type="button" class="btn btn-sm btn-outline-success" onclick="change_up(1)"><img src="pics/up.ico" width="30px" height="20px" /></button>
+				  <button type="button" class="btn btn-sm btn-outline-danger" onclick="change_down(1)"><img src="pics/down.ico" width="30px" height="20px" /></button>
+			</div>
+		</div>
+		<div class="card clss">
+			<div class="card-body">
+			      <h3 class="card-title">2班</h3>
+			      <p class="card-text"><span class="num" id="val-2">0</span></p>
+			      <button type="button" class="btn btn-sm btn-outline-success" onclick="change_up(2)"><img src="pics/up.ico" width="30px" height="20px" /></button>
+				  <button type="button" class="btn btn-sm btn-outline-danger" onclick="change_down(2)"><img src="pics/down.ico" width="30px" height="20px" /></button>
+			</div>
+		</div>
+		<div class="card clss">
+			<div class="card-body">
+			      <h3 class="card-title">3班</h3>
+			      <p class="card-text"><span class="num" id="val-3">0</span></p>
+			      <button type="button" class="btn btn-sm btn-outline-success" onclick="change_up(3)"><img src="pics/up.ico" width="30px" height="20px" /></button>
+				  <button type="button" class="btn btn-sm btn-outline-danger" onclick="change_down(3)"><img src="pics/down.ico" width="30px" height="20px" /></button>
+			</div>
+		</div>
+		<div class="card clss">
+			<div class="card-body">
+			      <h3 class="card-title">4班</h3>
+			      <p class="card-text"><span class="num" id="val-4">0</span></p>
+			      <button type="button" class="btn btn-sm btn-outline-success" onclick="change_up(4)"><img src="pics/up.ico" width="30px" height="20px" /></button>
+				  <button type="button" class="btn btn-sm btn-outline-danger" onclick="change_down(4)"><img src="pics/down.ico" width="30px" height="20px" /></button>
+			</div>
+		</div>
+		<div class="card clss">
+			<div class="card-body">
+			      <h3 class="card-title">5班</h3>
+			      <p class="card-text"><span class="num" id="val-5">0</span></p>
+			      <button type="button" class="btn btn-sm btn-outline-success" onclick="change_up(5)"><img src="pics/up.ico" width="30px" height="20px" /></button>
+				  <button type="button" class="btn btn-sm btn-outline-danger" onclick="change_down(5)"><img src="pics/down.ico" width="30px" height="20px" /></button>
+			</div>
+		</div>
+		<div class="card clss">
+			<div class="card-body">
+			      <h3 class="card-title">6班</h3>
+			      <p class="card-text"><span class="num" id="val-6">0</span></p>
+			      <button type="button" class="btn btn-sm btn-outline-success" onclick="change_up(6)"><img src="pics/up.ico" width="30px" height="20px" /></button>
+				  <button type="button" class="btn btn-sm btn-outline-danger" onclick="change_down(6)"><img src="pics/down.ico" width="30px" height="20px" /></button>
+			</div>
+		</div>
+		<div class="card clss">
+			<div class="card-body">
+			      <h3 class="card-title">7班</h3>
+			      <p class="card-text"><span class="num" id="val-7">0</span></p>
+			      <button type="button" class="btn btn-sm btn-outline-success" onclick="change_up(7)"><img src="pics/up.ico" width="30px" height="20px" /></button>
+				  <button type="button" class="btn btn-sm btn-outline-danger" onclick="change_down(7)"><img src="pics/down.ico" width="30px" height="20px" /></button>
+			</div>
+		</div>
+		<div class="card clss">
+			<div class="card-body">
+			      <h3 class="card-title">8班</h3>
+			      <p class="card-text"><span class="num" id="val-8">0</span></p>
+			      <button type="button" class="btn btn-sm btn-outline-success" onclick="change_up(8)"><img src="pics/up.ico" width="30px" height="20px" /></button>
+				  <button type="button" class="btn btn-sm btn-outline-danger" onclick="change_down(8)"><img src="pics/down.ico" width="30px" height="20px" /></button>
+			</div>
+		</div>
+		<div class="card clss">
+			<div class="card-body">
+			      <h3 class="card-title">9班</h3>
+			      <p class="card-text"><span class="num" id="val-9">0</span></p>
+			      <button type="button" class="btn btn-sm btn-outline-success" onclick="change_up(9)"><img src="pics/up.ico" width="30px" height="20px" /></button>
+				  <button type="button" class="btn btn-sm btn-outline-danger" onclick="change_down(9)"><img src="pics/down.ico" width="30px" height="20px" /></button>
+			</div>
+		</div>
+		<div class="card clss">
+			<div class="card-body">
+			      <h3 class="card-title">10班</h3>
+			      <p class="card-text"><span class="num" id="val-10">0</span></p>
+			      <button type="button" class="btn btn-sm btn-outline-success" onclick="change_up(10)"><img src="pics/up.ico" width="30px" height="20px" /></button>
+				  <button type="button" class="btn btn-sm btn-outline-danger" onclick="change_down(10)"><img src="pics/down.ico" width="30px" height="20px" /></button>
+			</div>
+		</div>
+		<div class="card clss">
+			<div class="card-body">
+			      <!-- <h3 class="card-title">计时器</h3> -->
+			      <!-- <p class="card-text"><span class="num" id="val-10">0</span></p> -->
+			      <!-- <button type="button" class="btn btn-sm btn-outline-success" onclick="change_up(10)"><img src="pics/up.ico" width="30px" height="20px" /></button> -->
+				  <!-- <button type="button" class="btn btn-sm btn-outline-danger" onclick="setTimeout(myFunction, 5000);" >5秒钟倒计时</button> -->
+				  <iframe width="300" height="250" src="http://naozhong.net.cn/embed/jishiqi/#countdown=00:00:05&enabled=0&seconds=0&title=%E6%8A%A2%E7%AD%94%E8%AE%A1%E6%97%B6%E5%99%A8&theme=0&ampm=0&sound=xylophone" frameborder="0" allowfullscreen></iframe> 
+				 
+				  <!-- <iframe width="475" height="250" src="http://naozhong.net.cn/embed/jishiqi/#countdown=00:00:05&date=2019-09-07T09:50:48&onzero=2&title=%E8%AE%A1%E6%97%B6%E5%99%A8&theme=0&ampm=0&sound=xylophone" frameborder="0" allowfullscreen></iframe> -->
+				  <p class="card-text">
+					
+					<br>
+					<small>By <a href="https://github.com/MrAMS/">Santiego</a> 2019</small>
+				</p>
+				</div>
+		</div>
+		<!-- <div class="card clss">
+			<div class="card-body">
+					<p class="card-text">
+						计分器
+						<br>
+						<small>By <a href="https://github.com/MrAMS/">Santiego</a> 2019</small>
+					</p>
+			</div>
+		</div> -->
+	</div>
+	
+
+</div>
+
+</body>
+</html>
